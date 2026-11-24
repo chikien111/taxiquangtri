@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f91">
+  <meta name="description" content="Taxi Điện Đông Hà - Quảng Trị. Gọi Hotline 0355 086 486 để đặt xe.">
+  <meta name="telephone" content="0355086486">
+  <title>Taxi Điện Đông Hà | Quảng Trị | 0355 086 486</title>
+  <style>
+    :root{--teal:#087f91;--cyan:#12b8bd;--green:#70bf35;--ink:#12343b;--muted:#60777b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5fbfa}
+    a{color:inherit}
+    .topbar{background:#075d6b;color:#fff;padding:9px 5%;font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;gap:20px;box-shadow:0 3px 18px #063d4512;position:relative;z-index:2}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--teal)}
+    .brand img{width:118px;height:72px;object-fit:contain;border-radius:8px;flex:0 0 auto}
+    .brand span{font-size:19px;line-height:1.15}
+    .brand small{display:block;color:var(--green);font-size:12px;letter-spacing:1.5px;margin-top:5px}
+    .header-call{background:var(--teal);color:white;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:800;white-space:nowrap;box-shadow:0 7px 18px #087f9133}
+    .hero{min-height:590px;position:relative;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,34,39,.82),rgba(3,44,49,.46),rgba(3,44,49,.12)),url('assets/doi-xe-taxi-dien.jpg') center 48%/cover no-repeat}
+    .hero-inner{width:min(1120px,90%);margin:auto;padding:78px 0;color:#fff}
+    .eyebrow{display:inline-block;background:#ffffff20;border:1px solid #ffffff70;padding:9px 15px;border-radius:99px;font-size:13px;letter-spacing:1.3px;font-weight:700}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.03;max-width:720px;margin:23px 0 17px;text-transform:uppercase}
+    h1 em{font-style:normal;color:#75e0d5}
+    .hero p{font-size:clamp(17px,2vw,21px);line-height:1.6;max-width:590px;color:#efffff;margin:0 0 30px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:16px 23px;border-radius:999px;font-weight:800;transition:.2s}
+    .btn:hover,.header-call:hover{transform:translateY(-2px)}
+    .btn-primary{background:#19b9b7;color:#fff;box-shadow:0 9px 22px #052e343b}
+    .btn-outline{border:1.5px solid #fff;color:#fff;background:#ffffff12}
+    .call-strip{background:linear-gradient(100deg,#087f91,#10aaa9);color:#fff;padding:24px 5%;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;text-align:center}
+    .call-strip strong{font-size:clamp(25px,4vw,35px);letter-spacing:1px}
+    .call-strip span{font-size:15px;opacity:.95}
+    section.content{padding:75px 5%;max-width:1200px;margin:auto}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title .tag{color:#159c91;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+    .section-title h2{font-size:clamp(28px,4vw,39px);margin:10px 0;color:#12434b}
+    .section-title p{color:var(--muted);line-height:1.6;margin:0 auto;max-width:650px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .feature{background:white;padding:29px 25px;border-radius:18px;box-shadow:0 8px 30px #06434b0b;border:1px solid #e6f1ef}
+    .feature .icon{width:48px;height:48px;border-radius:14px;background:#e2f8f4;display:grid;place-items:center;font-size:24px;margin-bottom:17px}
+    .feature h3{margin:0 0 9px;font-size:19px}
+    .feature p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}
+    .about{background:#eaf7f4}
+    .about-wrap{max-width:1100px;margin:auto;display:grid;grid-template-columns: minmax(230px, .8fr) 1.2fr;gap:48px;align-items:center;padding:65px 5%}
+    .logo-panel{background:#fff;border-radius:24px;padding:20px;box-shadow:0 12px 35px #0b5c5510}
+    .logo-panel img{width:100%;display:block}
+    .about h2{font-size:clamp(28px,4vw,38px);margin:0 0 15px}
+    .about p{color:#526d70;line-height:1.8;font-size:16px}
+    .contact{background:#073f49;color:white;text-align:center;padding:70px 5%}
+    .contact h2{font-size:clamp(28px,4vw,40px);margin:0 0 12px}
+    .contact p{color:#d4eeee;line-height:1.6;margin:0 auto 24px;max-width:600px}
+    .contact .number{font-size:clamp(32px,6vw,52px);font-weight:900;letter-spacing:1px;margin:10px 0 25px;color:#7ce3d7}
+    footer{background:#052f37;color:#b9d2d4;padding:22px 5%;text-align:center;font-size:13px;line-height:1.7}
+    .btn-call{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      text-align: right;
+    }
+    .floating-call{z-index:5;background:#11aeb0;color:#fff;text-decoration:none;border-radius:999px;padding:15px 20px;font-weight:900;box-shadow:0 8px 25px #003c4480;display:flex;align-items:center;gap:9px}
+    @media(max-width:760px){
+      .topbar{justify-content:center;text-align:center}
+      header{padding:10px 4%}.brand img{width:88px;height:58px}.brand span{font-size:15px}
+      .header-call{padding:11px 13px;font-size:13px}
+      .hero{min-height:570px;background-position:53% center}
+      .hero-inner{padding:65px 0}
+      .features{grid-template-columns:1fr}
+      .about-wrap{grid-template-columns:1fr;gap:28px;padding:55px 6%}
+      .logo-panel{max-width:360px;margin:auto}
+      section.content{padding:58px 6%}
+      .floating-call{right:12px;bottom:12px;padding:13px 16px}
+    }
+    .my-zalo{
+      width: 100%;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .my-zalo img{
+      width: 35%;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span>🚕 TAXI ĐÔNG HÀ - TAXI ĐIỆN QUẢNG TRỊ - DỊCH VỤ DI CHUYỂN THUẦN ĐIỆN</span>
+    <span>Hotline đặt xe: <strong>0355 086 486</strong></span>
+  </div>
+  <header>
+    <a class="brand" href="#trang-chu" aria-label="Taxi Điện Đông Hà - Trang chủ">
+      <img src="./images/logo.jpg" alt="Logo Taxi Điện Đông Hà">
+      <!-- <span>TAXI ĐIỆN ĐÔNG HÀ<small>QUẢNG TRỊ</small></span> -->
+    </a>
+    <a class="header-call" href="tel:0355086486">☎ GỌI 0355 086 486</a>
+  </header>
+
+  <main>
+    
+    <section class="hero" id="trang-chu">
+      <div class="hero-inner">
+        <span class="eyebrow">DI CHUYỂN XANH – HÀNH TRÌNH THOẢI MÁI</span>
+        <h1>Taxi điện<br><em>Đông Hà</em></h1>
+        <p>Đồng hành cùng bạn trên những hành trình tại Đông Hà và Quảng Trị. Liên hệ hotline để đặt xe nhanh chóng.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:0355086486">☎ GỌI TAXI NGAY</a>
+          <a class="btn btn-outline" href="#lien-he">Thông tin liên hệ</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="call-strip">
+      <span>ĐẶT XE TAXI ĐIỆN ĐÔNG HÀ</span>
+      <strong>0355 086 486</strong>
+      <a class="btn btn-outline" href="tel:0355086486">BẤM ĐỂ GỌI</a>
+    </div>
+
+    <section class="content" id="dich-vu">
+      <div class="section-title">
+        <div class="tag">Taxi Điện Đông Hà</div>
+        <h2>Sẵn sàng cho hành trình của bạn</h2>
+        <p>Chọn Taxi Điện Đông Hà cho nhu cầu di chuyển. Gọi hotline để được hỗ trợ thông tin và đặt xe.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <div class="icon">⚡</div>
+          <h3>Di chuyển bằng xe điện</h3>
+          <p>Trải nghiệm lựa chọn di chuyển bằng xe điện với hình ảnh đội xe màu xanh đặc trưng.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">📞</div>
+          <h3>Đặt xe qua hotline</h3>
+          <p>Gọi trực tiếp số 0355 086 486 để liên hệ đặt xe và trao đổi nhu cầu chuyến đi.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">📍</div>
+          <h3>Đông Hà – Quảng Trị</h3>
+          <p>Taxi Điện Đông Hà – Quảng Trị, đồng hành cùng nhu cầu đi lại tại địa phương.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-wrap">
+        <div class="logo-panel"><img src="./images/img.jpg" alt="Taxi Điện Đông Hà - Quảng Trị"></div>
+        <div>
+          <div class="tag" style="color:#159c91;font-weight:800;letter-spacing:2px;font-size:12px">THƯƠNG HIỆU</div>
+          <h2>Taxi Đông Hà - Taxi Điện Quảng Trị</h2>
+          <p>Taxi Điện Đông Hà mang đến lựa chọn di chuyển bằng xe điện với màu xanh nhận diện riêng. Cảm ơn bạn đã quan tâm và lựa chọn dịch vụ.</p>
+          <a class="btn btn-primary" href="tel:0355086486">☎ 0355 086 486</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="lien-he">
+      <h2>ĐẶT TAXI NGAY HÔM NAY</h2>
+      <p>Liên hệ đặt xe Taxi Điện Đông Hà để đặt xe hoặc hỏi thêm thông tin về chuyến đi.</p>
+      <div class="number">0355 086 486</div>
+      <a class="btn btn-primary" href="tel:0355086486">☎ HOTLINE</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>TAXI ĐIỆN ĐÔNG HÀ – QUẢNG TRỊ</strong><br>
+    Hotline: 0355 086 486<br>
+    © 2026 Taxi Điện Đông Hà. All rights reserved.
+  </footer>
+  <div class="btn-call">
+    <a href="https://www.facebook.com/share/19zjSNg8sK/?mibextid=wwXIfr" target="_blank" class="my-zalo"><img src="./images/fb.png" alt=""></a>
+    <a href="https://zalo.me/0355086486" class="my-zalo" target="_blank"><img src="./images/zalo.png" alt=""></a>
+    <a class="floating-call" href="tel:0355086486" aria-label="Gọi Taxi Điện Đông Hà">☎ GỌI TAXI</a>
+  </div>
+</body>
+</html>
